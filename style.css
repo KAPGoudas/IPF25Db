@@ -1,0 +1,154 @@
+		body{
+			/* Η αισθητική εικόνα του σώματος της κάθε σελίδας */
+		    background-color: whitesmoke;
+			max-width: 1000px;
+			margin: auto;
+			position: sticky;
+		}
+		#titlos{
+			/* Η θέση του τίτλου της βάσης όπως θα εμφανίζεται σε κάθε σελίδα */
+			display: block;
+			position: relative;
+			top: 5px;
+		}
+		header{
+			/* Η αισθητική εικόνα της κάθε κεφαλίδας */
+			background-color: rgb(15, 174, 228);
+			text-align: center;
+			height: 100px;
+			font-family: Arial, Helvetica, sans-serif;
+			}
+        #main{
+			/* Η αισθητική εικόνα του κυρίως τμήματος της κάθε σελίδας */
+			position: relative;
+			top: 10px;
+            min-height: 500px;
+			text-align: justify;
+			margin: 10px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+		a{
+			color: black;
+			text-decoration: none;
+			/* Οι σύνδεσμοι τροποποιήθηκαν αισθητικά ώστε να μη διαφέρουν αισθητικά από το υπόλοιπο κείμενο. */
+		}
+		#blank{
+			height: 20px;
+			/* Το κενό αυτό κατασκευάστηκε για να τοποθετείται όποτε θα ταίριαζε ένα χάσμα μεταξύ δύο αντικειμένων. */
+		}
+		footer{
+			/* Η αισθητική εικόνα του κυρίως τμήματος της κάθε σελίδας */
+			background-color: rgb(15, 174, 228);
+			height: 30px;
+		}
+		.Table{
+			/* Η αισθητική εικόνα των πινάκων στο extra.js */
+			position: relative;
+			left: 5px;
+			right: 5px;
+			top: 10px;
+			overflow: auto;
+			display: none; /* Οι πίνακες κρύβονται μέχρις ότου τους καλέσει ο χρήστης */
+		}
+		table {
+			/* Η αισθητική εικόνα του κάθε πίνακα της βάσης */
+ 		 	font-size: small;
+ 			table-layout: fixed;
+			overflow: hidden;
+			text-align: center;
+		}
+		.tablemenu button{
+			/* Η αισθητική εικόνα του κουμπιού του extra.php */
+			background-color: rgb(167, 163, 163);
+			padding: 10px 15px;
+			border: none;
+			font-size: medium;
+			cursor: pointer;
+		}
+		.tablemenu button:hover{
+			background-color: rgb(190, 186, 186); /* Όταν ο κέρσορας του χρήστη φτάνει πάνω από το κουμπί του μενού, το χρώμα του αλλάζει ελαφρώς.*/
+		}
+		.tablemenu .menu{
+			/* Η εικόνα του μενού του extra.php */
+			display: none; /* Το μενού αρχικά, δεν φαίνεται. */
+			position: absolute;
+			max-width: 200px;
+			background-color: white;
+			color: black;
+		}
+		.tablemenu a{
+			/* Η εικόνα των επιλογών στο μενού του extra.php */
+			display: block;
+			padding: 10px 15px;
+		}
+		.tablemenu .show{
+			/* Η εικόνα του μενού όταν φαίνεται στη σελίδα. */
+			display: block;
+			z-index: 1; /* Το μενού θέλουμε να φαίνεται πάνω από τον πίνακα που ενδεχομένως να προβάλλεται. */
+			cursor: pointer;
+		}
+		.tablemenu a:hover{
+			color:black;
+			background-color: gainsboro; /* Όταν ο κέρσορας του χρήστη φτάνει πάνω μια επιλογή, το χρώμα της αλλάζει ελαφρώς.*/
+		}
+
+		.ShowTable{
+			display: grid; /* Η μορφή ενός πίνακα στο extra.php, όταν την προβάλλει το extra.js */
+		}
+
+		#Find{ /* Το κουτάκι για την αναζήτηση στο base.php */
+			position: relative;
+			left: 5px;
+			right:auto;
+			width: 250px;
+			height: 20px;
+		}
+		/* Οι διαχωριστικές γραμμές σε κάθε πίνακα της εφαρμογης. */
+		th, td {
+  				border: 1px solid black;
+  				width: 200px;
+  				overflow: hidden;
+			}
+
+		.bottom{
+			font-family: Verdana, Geneva, Tahoma, sans-serif; /* Η μορφή των γραμμάτων στην κάτω γραμμή του κάθε αρχείου */
+			font-size:small;
+		}
+		.bottom ul{
+			background-color: rgb(15, 174, 228); /* Το χρώμα της κάτω γραμμής είναι ίδιο με της πάνω γραμμής. */
+			overflow: hidden;
+			list-style-type: none; /* Τα αντικείμενα δεν κατανέμονται σε λίστα. */
+		}
+		.bottom a{ /* Εικόνα των αντικείμενων-συνδέσμων στην κάτω γραμμή.  */
+			text-decoration: none;
+			padding: 10px;
+			display: block;
+		}
+		.bottom a:hover{
+			background-color: rgb(29, 195, 250); /* Εάν ο κέρσορας είναι πάνω σε αντικείμενο της κάτω γραμμής, το χρώμα του αντικειμένου αλλάζει. */
+		}
+		.bottom li{
+			float:left; /* Τα αντικείμενα της κάτω γραμμής είναι κατανεμημένα αριστερά. */
+		}
+		#sfalma{
+			background-color: rgb(248, 87, 87); /* Για μια πιο φανερή εικόνα του σφάλματος, βρίσκεται σε φόντο με έντονο κόκκινο χρώμα */
+			display: inline;
+		}
+		#link{
+			text-decoration: underline; /* Οι σύνδεσμοι στο index.html είναι υπογραμμισμένοι. */
+		}
+		.Type{ /* Εικόνα των κουτιών στο choice.html */
+			width: 200px;
+			height: 20px;
+			margin: 5px;
+		}
+		#Fakos{ /* Ρύθμιση της θέσης του φακού στο base.php */
+			position:relative;
+			height: 15px;
+			width: 15px;
+			cursor: pointer;
+			display: inline-block;
+		}
+		#Kefalida{ /* Θέση της κεφαλίδας στο public.php */
+			text-align: center;
+		}
